@@ -381,45 +381,45 @@ void print_board(board_t* board) {
 
     for (int i = 0; i < board->width + 1; ++i) {
         if (i == 0) {
-            printf("╔");
+            printf("|");
 
             for (int j = 0; j < digits + 2; ++j) {
-                printf("═");
+                printf("_");
             }
 
-            printf("╦");
+            printf("|");
         }
 
         if (i == board->width) {
-            printf("╗");
+            printf("|");
             continue;
         }
 
         for (int k = 0; k < digits; ++k) {
-            printf("═");
+            printf("_");
         }
 
-        printf("═");
+        printf("_");
 
         for (int k = 0; k < digits; ++k) {
-            printf("═");
+            printf("_");
         }
     }
     printf("\n");
 
     for (int i = 0; i < board->width + 1; ++i) {
         if (i == 0) {
-            printf("║");
+            printf("|");
 
             for (int j = 0; j < digits + 2; ++j) {
                 printf(" ");
             }
 
-            printf("║");
+            printf("|");
         }
 
         if (i == board->width) {
-            printf("║");
+            printf("|");
             continue;
         }
 
@@ -437,28 +437,28 @@ void print_board(board_t* board) {
 
     for (int i = 0; i < board->width + 1; ++i) {
         if (i == 0) {
-            printf("╠");
+            printf("|");
 
             for (int j = 0; j < digits + 2; ++j) {
-                printf("═");
+                printf("|");
             }
 
-            printf("╬");
+            printf("|");
         }
 
         if (i == board->width) {
-            printf("╣");
+            printf("|");
             continue;
         }
 
         for (int k = 0; k < digits; ++k) {
-            printf("═");
+            printf("_");
         }
 
-        printf("═");
+        printf("_");
 
         for (int k = 0; k < digits; ++k) {
-            printf("═");
+            printf("_");
         }
     }
 
@@ -469,7 +469,7 @@ void print_board(board_t* board) {
 
         for (int j = 0; j < board->width; ++j) {
             if (j == 0) {
-                printf("║ ");
+                printf("| ");
 
                 printf("%d", i);
 
@@ -480,7 +480,7 @@ void print_board(board_t* board) {
                     printf(" ");
                 }
 
-                printf("║");
+                printf("|");
             }
 
 
@@ -495,7 +495,7 @@ void print_board(board_t* board) {
             }
 
             if(j == board->width - 1) {
-                printf("║");
+                printf("|");
                 continue;
             }
 
@@ -505,28 +505,28 @@ void print_board(board_t* board) {
 
     for (int i = 0; i < board->width + 1; ++i) {
         if (i == 0) {
-            printf("╚");
+            printf("|");
 
             for (int j = 0; j < digits + 2; ++j) {
-                printf("═");
+                printf("_");
             }
 
-            printf("╩");
+            printf("|");
         }
 
         if (i == board->width) {
-            printf("╝");
+            printf("|");
             continue;
         }
 
         for (int k = 0; k < digits; ++k) {
-            printf("═");
+            printf("_");
         }
 
-        printf("═");
+        printf("_");
 
         for (int k = 0; k < digits; ++k) {
-            printf("═");
+            printf("_");
         }
     }
 
